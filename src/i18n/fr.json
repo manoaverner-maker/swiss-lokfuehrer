@@ -1,0 +1,114 @@
+{
+  "app": {
+    "name": "Swiss Lokführer"
+  },
+  "common": {
+    "back": "Retour",
+    "home": "Gare",
+    "listen": "Écouter",
+    "close": "Fermer",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "yes": "Oui",
+    "no": "Non",
+    "comingSoon": "Cette voie est encore en construction !",
+    "comingSoonSub": "Les ouvriers travaillent dur. Reviens bientôt !",
+    "language": "Langue",
+    "offline": "Hors ligne – pas de problème !"
+  },
+  "station": {
+    "greeting": "Grüezi {{name}} ! Prêt pour ton service ?",
+    "greetingShort": "Grüezi {{name}} !",
+    "whoIsDriving": "Qui conduit aujourd’hui ?",
+    "newDriver": "Nouveau conducteur",
+    "switchDriver": "Changer de conducteur",
+    "tapTrain": "Touche le train !"
+  },
+  "tiles": {
+    "map": "Carte",
+    "lexicon": "Trains",
+    "games": "Jeux",
+    "album": "Album",
+    "license": "Ma carte",
+    "knowledge": "Le sais-tu ?"
+  },
+  "profile": {
+    "title": "Profil du conducteur",
+    "name": "Nom",
+    "namePlaceholder": "Ton nom",
+    "mode": "Mode",
+    "junior": "Junior",
+    "juniorHint": "Grandes images, tout est lu à voix haute",
+    "pro": "Pro",
+    "proHint": "Tous les détails, niveaux plus difficiles",
+    "cap": "Couleur de la casquette",
+    "language": "Langue"
+  },
+  "parents": {
+    "title": "Coin des parents",
+    "gateTitle": "Seulement pour les grands",
+    "gateQuestion": "Combien font {{a}} × {{b}} ?",
+    "gateWrong": "Pas tout à fait – essaie encore.",
+    "gateOk": "Ouvrir",
+    "profiles": "Profils",
+    "addProfile": "Ajouter un profil",
+    "sound": "Son",
+    "volume": "Volume",
+    "mute": "Son activé",
+    "music": "Musique de fond",
+    "speech": "Lire les textes à voix haute",
+    "resetProgress": "Remettre à zéro",
+    "resetConfirm": "Vraiment effacer toutes les étoiles et cartes de {{name}} ?",
+    "resetDone": "Progression effacée.",
+    "deleteConfirm": "Supprimer le profil {{name}} ?",
+    "credits": "Crédits photos",
+    "creditsSoon": "Les crédits apparaîtront ici dès que les vraies photos seront ajoutées.",
+    "about": "À propos",
+    "aboutText": "Fait avec amour pour deux jeunes fans de trains. Pas de pub, pas de suivi, pas de compte. Toutes les données restent sur cet appareil.",
+    "dataNote": "Les données marquées « à vérifier » sont encore en cours de vérification.",
+    "voiceMissing": "Aucune voix installée pour cette langue sur cet appareil."
+  },
+  "lexicon": {
+    "horn": "Tût-tût !",
+    "title": "Encyclopédie des trains",
+    "filterAll": "Tous",
+    "specs": "Fiche technique",
+    "funFacts": "Le savais-tu ?",
+    "photos": "Photos",
+    "photoSoon": "Photo bientôt",
+    "unverified": "à vérifier",
+    "fields": {
+      "operator": "Compagnie",
+      "category": "Type",
+      "gauge": "Écartement",
+      "manufacturer": "Constructeur",
+      "inService": "En service depuis",
+      "numberBuilt": "Nombre construit",
+      "maxSpeed": "Vitesse maximale",
+      "power": "Puissance",
+      "weight": "Poids",
+      "length": "Longueur",
+      "seats": "Places assises",
+      "electrification": "Alimentation"
+    },
+    "category": {
+      "locomotive": "Locomotive",
+      "multiple_unit": "Automotrice",
+      "rack_railway": "Train à crémaillère",
+      "shunter": "Locotracteur",
+      "historic": "Historique",
+      "composition": "Composition"
+    },
+    "gauge": {
+      "standard": "Voie normale",
+      "meter": "Voie métrique",
+      "other": "Autre"
+    },
+    "era": {
+      "historic": "Historique",
+      "classic": "Classique",
+      "modern": "Moderne"
+    }
+  }
+}

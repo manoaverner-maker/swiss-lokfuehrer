@@ -1,0 +1,46 @@
+{
+  "id": "rabe501",
+  "name": "RABe 501",
+  "nickname": "Giruno",
+  "operator": "SBB",
+  "category": "multiple_unit",
+  "gauge": "standard",
+  "era": "modern",
+  "manufacturer": "Stadler Rail",
+  "inService": { "from": 2019 },
+  "numberBuilt": 36,
+  "specs": {
+    "maxSpeedKmh": 250,
+    "powerKw": 6000,
+    "lengthM": 202,
+    "seats": 405,
+    "electrification": "15 kV 16.7 Hz AC / 3 kV DC / 25 kV 50 Hz AC"
+  },
+  "routes": [],
+  "funFacts": [
+    { "en": "“Giruno” means “buzzard” in Romansh, one of the four Swiss languages.", "fr": "« Giruno » veut dire « buse » en romanche, une des quatre langues suisses.", "junior": true },
+    { "en": "It rushes through the Gotthard Base Tunnel, the longest railway tunnel in the world.", "fr": "Il fonce dans le tunnel de base du Gothard, le plus long tunnel ferroviaire du monde.", "junior": true },
+    { "en": "It can run on Swiss, Italian and German power systems, so it travels all the way to Milan.", "fr": "Il roule avec les courants suisse, italien et allemand : il peut aller jusqu’à Milan.", "junior": false }
+  ],
+  "description": {
+    "en": {
+      "junior": "A long white high-speed train that goes to Italy.",
+      "pro": "The Giruno is a low-floor high-speed train built for the Gotthard route. It links Zurich and Basel with Ticino and Milan."
+    },
+    "fr": {
+      "junior": "Un long train blanc à grande vitesse qui va en Italie.",
+      "pro": "Le Giruno est un train à grande vitesse à plancher bas conçu pour la ligne du Gothard. Il relie Zurich et Bâle au Tessin et à Milan."
+    }
+  },
+  "images": [
+    { "file": "placeholder", "author": "—", "license": "—", "sourceUrl": "", "placeholder": true },
+    { "file": "placeholder", "author": "—", "license": "—", "sourceUrl": "", "placeholder": true },
+    { "file": "placeholder", "author": "—", "license": "—", "sourceUrl": "", "placeholder": true }
+  ],
+  "model": { "type": "procedural", "preset": "giruno", "colors": { "body": "#F4F4F2", "roof": "#B8BDC4", "stripe": "#E30613", "window": "#2D3036" } },
+  "sound": "horn-two-tone",
+  "rarity": "rare",
+  "verified": false,
+  "unverifiedFields": ["numberBuilt", "specs.seats", "specs.powerKw", "inService.from"],
+  "sources": ["https://de.wikipedia.org/wiki/SBB_RABe_501"]
+}

@@ -1,0 +1,94 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Baloo 2', 'Nunito', system-ui, sans-serif;
+  --font-sans: 'Nunito', system-ui, sans-serif;
+
+  --color-rail: #e30613;
+  --color-rail-dark: #b0040f;
+  --color-anthracite: #2d3036;
+  --color-snow: #fbfcfd;
+  --color-cream: #fff4e6;
+  --color-alpine: #4caf50;
+  --color-alpine-dark: #2e7d32;
+  --color-sky: #6ec6f0;
+  --color-sky-deep: #2a86c8;
+  --color-sun: #ffb347;
+  --color-gold: #f2a900;
+
+  --radius-blob: 2rem;
+  --shadow-toy: 0 6px 0 rgb(0 0 0 / 0.18), 0 12px 24px -8px rgb(0 0 0 / 0.25);
+  --shadow-toy-pressed: 0 2px 0 rgb(0 0 0 / 0.18), 0 4px 10px -4px rgb(0 0 0 / 0.25);
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+  body {
+    margin: 0;
+    background: var(--color-cream);
+    color: var(--color-anthracite);
+    font-family: var(--font-sans);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    user-select: none;
+    overscroll-behavior: none;
+    touch-action: manipulation;
+  }
+  input,
+  textarea {
+    -webkit-user-select: text;
+    user-select: text;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+  }
+  button {
+    cursor: pointer;
+    font: inherit;
+  }
+}
+
+@layer components {
+  .toy-btn {
+    @apply inline-flex min-h-16 min-w-16 items-center justify-center gap-2 rounded-[1.25rem] px-5 font-display text-xl font-bold transition-transform active:translate-y-1;
+    box-shadow: var(--shadow-toy);
+  }
+  .toy-btn:active {
+    box-shadow: var(--shadow-toy-pressed);
+  }
+  .panel {
+    @apply rounded-[var(--radius-blob)] bg-white/90 backdrop-blur;
+    box-shadow: 0 10px 30px -10px rgb(0 0 0 / 0.3);
+  }
+  .safe-pad {
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+  }
+}
+
+@keyframes drift {
+  from { transform: translateX(-20%); }
+  to { transform: translateX(120vw); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+.wheel-spin {
+  animation: wheel-spin 0.5s linear infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+@keyframes wheel-spin {
+  to { transform: rotate(-360deg); }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ge44ii",
+  "name": "Ge 4/4 II",
+  "operator": "RhB",
+  "category": "locomotive",
+  "gauge": "meter",
+  "era": "classic",
+  "manufacturer": "SLM / BBC",
+  "inService": { "from": 1973 },
+  "numberBuilt": 23,
+  "specs": {
+    "maxSpeedKmh": 90,
+    "powerKw": 1700,
+    "weightT": 50,
+    "lengthM": 12.96,
+    "electrification": "11 kV 16.7 Hz AC"
+  },
+  "routes": [],
+  "funFacts": [
+    { "en": "It runs on narrow metre-gauge tracks high up in the mountains.", "fr": "Elle roule sur des voies étroites (voie métrique) tout en haut des montagnes.", "junior": true },
+    { "en": "Many of these locos carry the coat of arms of a town in Graubünden.", "fr": "Beaucoup de ces locomotives portent les armoiries d’une commune des Grisons.", "junior": true },
+    { "en": "Its rails are only 1 metre apart – the big Swiss lines use 1.435 m.", "fr": "Ses rails ne sont écartés que d’un mètre – les grandes lignes suisses utilisent 1,435 m.", "junior": false }
+  ],
+  "description": {
+    "en": {
+      "junior": "A small red mountain locomotive.",
+      "pro": "The Ge 4/4 II is a classic locomotive of the Rhaetian Railway in Graubünden. It pulls passenger and freight trains on the metre-gauge network."
+    },
+    "fr": {
+      "junior": "Une petite locomotive rouge de montagne.",
+      "pro": "La Ge 4/4 II est une locomotive classique des Chemins de fer rhétiques, dans les Grisons. Elle tire des trains de voyageurs et de marchandises sur le réseau à voie métrique."
+    }
+  },
+  "images": [
+    { "file": "placeholder", "author": "—", "license": "—", "sourceUrl": "", "placeholder": true },
+    { "file": "placeholder", "author": "—", "license": "—", "sourceUrl": "", "placeholder": true },
+    { "file": "placeholder", "author": "—", "license": "—", "sourceUrl": "", "placeholder": true }
+  ],
+  "model": { "type": "procedural", "preset": "ge44ii", "colors": { "body": "#C8102E", "roof": "#4A4D52", "stripe": "#F4F1EA" } },
+  "sound": "horn-two-tone",
+  "rarity": "common",
+  "verified": false,
+  "unverifiedFields": ["numberBuilt", "specs.weightT", "specs.lengthM"],
+  "sources": ["https://de.wikipedia.org/wiki/RhB_Ge_4/4_II"]
+}

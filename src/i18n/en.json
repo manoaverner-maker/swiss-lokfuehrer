@@ -1,0 +1,114 @@
+{
+  "app": {
+    "name": "Swiss Lokführer"
+  },
+  "common": {
+    "back": "Back",
+    "home": "Station",
+    "listen": "Listen",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "yes": "Yes",
+    "no": "No",
+    "comingSoon": "This track is still being built!",
+    "comingSoonSub": "The workers are busy. Come back soon!",
+    "language": "Language",
+    "offline": "Offline – no problem!"
+  },
+  "station": {
+    "greeting": "Grüezi {{name}}! Ready for your shift?",
+    "greetingShort": "Grüezi {{name}}!",
+    "whoIsDriving": "Who is driving today?",
+    "newDriver": "New driver",
+    "switchDriver": "Switch driver",
+    "tapTrain": "Tap the train!"
+  },
+  "tiles": {
+    "map": "Map",
+    "lexicon": "Trains",
+    "games": "Games",
+    "album": "Card album",
+    "license": "My driver card",
+    "knowledge": "Did you know?"
+  },
+  "profile": {
+    "title": "Driver profile",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "mode": "Mode",
+    "junior": "Junior",
+    "juniorHint": "Big pictures, everything read out loud",
+    "pro": "Pro",
+    "proHint": "All the facts, harder levels",
+    "cap": "Cap colour",
+    "language": "Language"
+  },
+  "parents": {
+    "title": "Parents' corner",
+    "gateTitle": "Only for grown-ups",
+    "gateQuestion": "What is {{a}} × {{b}}?",
+    "gateWrong": "Not quite – try again.",
+    "gateOk": "Open",
+    "profiles": "Profiles",
+    "addProfile": "Add profile",
+    "sound": "Sound",
+    "volume": "Volume",
+    "mute": "Sound on",
+    "music": "Background music",
+    "speech": "Read texts aloud",
+    "resetProgress": "Reset progress",
+    "resetConfirm": "Really reset all stars and cards of {{name}}?",
+    "resetDone": "Progress reset.",
+    "deleteConfirm": "Delete the profile {{name}}?",
+    "credits": "Image credits",
+    "creditsSoon": "Photo credits will appear here once real photos are added.",
+    "about": "About",
+    "aboutText": "Made with love for two young train fans. No ads, no tracking, no logins. All data stays on this device.",
+    "dataNote": "Train data marked “to be checked” is still being verified.",
+    "voiceMissing": "No voice installed for this language on this device."
+  },
+  "lexicon": {
+    "horn": "Toot toot!",
+    "title": "Train encyclopedia",
+    "filterAll": "All",
+    "specs": "Fact sheet",
+    "funFacts": "Fun facts",
+    "photos": "Photos",
+    "photoSoon": "Photo coming soon",
+    "unverified": "to be checked",
+    "fields": {
+      "operator": "Company",
+      "category": "Type",
+      "gauge": "Gauge",
+      "manufacturer": "Builder",
+      "inService": "In service since",
+      "numberBuilt": "Number built",
+      "maxSpeed": "Top speed",
+      "power": "Power",
+      "weight": "Weight",
+      "length": "Length",
+      "seats": "Seats",
+      "electrification": "Power supply"
+    },
+    "category": {
+      "locomotive": "Locomotive",
+      "multiple_unit": "Multiple unit",
+      "rack_railway": "Rack railway",
+      "shunter": "Shunter",
+      "historic": "Historic",
+      "composition": "Train set"
+    },
+    "gauge": {
+      "standard": "Standard gauge",
+      "meter": "Metre gauge",
+      "other": "Other"
+    },
+    "era": {
+      "historic": "Historic",
+      "classic": "Classic",
+      "modern": "Modern"
+    }
+  }
+}

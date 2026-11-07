@@ -1,0 +1,46 @@
+{
+  "id": "re460",
+  "name": "Re 460",
+  "nickname": "Lok 2000",
+  "operator": "SBB",
+  "category": "locomotive",
+  "gauge": "standard",
+  "era": "modern",
+  "manufacturer": "SLM / ABB",
+  "inService": { "from": 1992 },
+  "numberBuilt": 119,
+  "specs": {
+    "maxSpeedKmh": 230,
+    "powerKw": 6100,
+    "weightT": 84,
+    "lengthM": 18.5,
+    "electrification": "15 kV 16.7 Hz AC"
+  },
+  "routes": [],
+  "funFacts": [
+    { "en": "Many Re 460 locos wear big adverts, so each one can look different!", "fr": "Beaucoup de Re 460 portent de grandes publicités : chacune peut avoir un look différent !", "junior": true },
+    { "en": "Its round, smooth nose was shaped in a wind tunnel.", "fr": "Son nez rond et lisse a été dessiné en soufflerie.", "junior": true },
+    { "en": "It pulls the double-deck IC2000 trains across Switzerland every day.", "fr": "Elle tire chaque jour les trains à deux étages IC2000 à travers la Suisse.", "junior": false }
+  ],
+  "description": {
+    "en": {
+      "junior": "A fast red locomotive with a round nose.",
+      "pro": "The Re 460 is the workhorse of SBB long-distance traffic. It hauls InterCity trains, often with double-deck IC2000 coaches."
+    },
+    "fr": {
+      "junior": "Une locomotive rouge et rapide avec un nez tout rond.",
+      "pro": "La Re 460 est la bête de somme des grandes lignes CFF. Elle tire les trains InterCity, souvent avec des voitures à deux étages IC2000."
+    }
+  },
+  "images": [
+    { "file": "placeholder", "author": "—", "license": "—", "sourceUrl": "", "placeholder": true },
+    { "file": "placeholder", "author": "—", "license": "—", "sourceUrl": "", "placeholder": true },
+    { "file": "placeholder", "author": "—", "license": "—", "sourceUrl": "", "placeholder": true }
+  ],
+  "model": { "type": "procedural", "preset": "re460", "colors": { "body": "#E30613", "roof": "#3A3D42", "stripe": "#FFFFFF" } },
+  "sound": "horn-two-tone",
+  "rarity": "common",
+  "verified": false,
+  "unverifiedFields": ["inService.from", "numberBuilt", "specs.weightT", "specs.lengthM"],
+  "sources": ["https://de.wikipedia.org/wiki/SBB_Re_460"]
+}
