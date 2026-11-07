@@ -6,7 +6,9 @@
   "gauge": "meter",
   "era": "classic",
   "manufacturer": "SLM / BBC",
-  "inService": { "from": 1973 },
+  "inService": {
+    "from": 1973
+  },
   "numberBuilt": 23,
   "specs": {
     "maxSpeedKmh": 90,
@@ -17,9 +19,26 @@
   },
   "routes": [],
   "funFacts": [
-    { "en": "It runs on narrow metre-gauge tracks high up in the mountains.", "fr": "Elle roule sur des voies étroites (voie métrique) tout en haut des montagnes.", "junior": true },
-    { "en": "Many of these locos carry the coat of arms of a town in Graubünden.", "fr": "Beaucoup de ces locomotives portent les armoiries d’une commune des Grisons.", "junior": true },
-    { "en": "Its rails are only 1 metre apart – the big Swiss lines use 1.435 m.", "fr": "Ses rails ne sont écartés que d’un mètre – les grandes lignes suisses utilisent 1,435 m.", "junior": false }
+    {
+      "en": "Each of these locos has the name and coat of arms of a town in Graubünden.",
+      "fr": "Chaque loco porte le nom et les armoiries d’une commune des Grisons.",
+      "junior": true
+    },
+    {
+      "en": "It runs on narrow tracks: the rails are only 1 metre apart.",
+      "fr": "Elle roule sur une voie étroite : les rails ne sont écartés que d’un mètre.",
+      "junior": true
+    },
+    {
+      "en": "It drives over the Albula line, a UNESCO World Heritage railway.",
+      "fr": "Elle circule sur la ligne de l’Albula, inscrite au patrimoine mondial de l’UNESCO.",
+      "junior": false
+    },
+    {
+      "en": "The big Swiss lines use 1.435 m between the rails – 43.5 cm more!",
+      "fr": "Les grandes lignes suisses ont 1,435 m entre les rails – 43,5 cm de plus !",
+      "junior": false
+    }
   ],
   "description": {
     "en": {
@@ -32,14 +51,42 @@
     }
   },
   "images": [
-    { "file": "placeholder", "author": "—", "license": "—", "sourceUrl": "", "placeholder": true },
-    { "file": "placeholder", "author": "—", "license": "—", "sourceUrl": "", "placeholder": true },
-    { "file": "placeholder", "author": "—", "license": "—", "sourceUrl": "", "placeholder": true }
+    {
+      "file": "images/trains/ge44ii-1.webp",
+      "thumb": "images/trains/ge44ii-1-sm.webp",
+      "author": "GoodRJ",
+      "license": "GFDL",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CH_RhB_Ge44_II_618.JPG"
+    },
+    {
+      "file": "images/trains/ge44ii-2.webp",
+      "thumb": "images/trains/ge44ii-2-sm.webp",
+      "author": "Whgler",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bahnhof_Disentis_Rangierfahrt_2021g.jpg"
+    },
+    {
+      "file": "images/trains/ge44ii-3.webp",
+      "thumb": "images/trains/ge44ii-3-sm.webp",
+      "author": "Bybbisch94",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:20240902.Glacier_Express.-031.jpg"
+    }
   ],
-  "model": { "type": "procedural", "preset": "ge44ii", "colors": { "body": "#C8102E", "roof": "#4A4D52", "stripe": "#F4F1EA" } },
-  "sound": "horn-two-tone",
+  "model": {
+    "type": "procedural",
+    "preset": "ge44ii",
+    "colors": {
+      "body": "#C8102E",
+      "roof": "#4A4D52",
+      "stripe": "#F4F1EA"
+    }
+  },
+  "sound": "horn-high",
   "rarity": "common",
-  "verified": false,
-  "unverifiedFields": ["numberBuilt", "specs.weightT", "specs.lengthM"],
-  "sources": ["https://de.wikipedia.org/wiki/RhB_Ge_4/4_II"]
+  "verified": true,
+  "sources": [
+    "https://de.wikipedia.org/wiki/RhB_Ge_4/4_II",
+    "https://de.wikipedia.org/wiki/Albulabahn"
+  ]
 }

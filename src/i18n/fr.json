@@ -15,7 +15,8 @@
     "comingSoon": "Cette voie est encore en construction !",
     "comingSoonSub": "Les ouvriers travaillent dur. Reviens bientôt !",
     "language": "Langue",
-    "offline": "Hors ligne – pas de problème !"
+    "offline": "Hors ligne – pas de problème !",
+    "colon": " : "
   },
   "station": {
     "greeting": "Grüezi {{name}} ! Prêt pour ton service ?",
@@ -67,7 +68,8 @@
     "about": "À propos",
     "aboutText": "Fait avec amour pour deux jeunes fans de trains. Pas de pub, pas de suivi, pas de compte. Toutes les données restent sur cet appareil.",
     "dataNote": "Les données marquées « à vérifier » sont encore en cours de vérification.",
-    "voiceMissing": "Aucune voix installée pour cette langue sur cet appareil."
+    "voiceMissing": "Aucune voix installée pour cette langue sur cet appareil.",
+    "creditsIntro": "Photos de Wikimedia Commons, sous licences libres. Merci à tous les photographes !"
   },
   "lexicon": {
     "horn": "Tût-tût !",
@@ -83,14 +85,15 @@
       "category": "Type",
       "gauge": "Écartement",
       "manufacturer": "Constructeur",
-      "inService": "En service depuis",
+      "inService": "Depuis",
       "numberBuilt": "Nombre construit",
       "maxSpeed": "Vitesse maximale",
       "power": "Puissance",
       "weight": "Poids",
       "length": "Longueur",
       "seats": "Places assises",
-      "electrification": "Alimentation"
+      "electrification": "Alimentation",
+      "until": "Jusqu’en"
     },
     "category": {
       "locomotive": "Locomotive",
@@ -110,5 +113,53 @@
       "classic": "Classique",
       "modern": "Moderne"
     }
+  },
+  "filters": {
+    "operator": "Compagnie",
+    "category": "Type",
+    "gauge": "Écartement",
+    "era": "Époque",
+    "reset": "Tout afficher",
+    "none": "Aucun train. Essaie un autre filtre !",
+    "count": "{{count}} trains"
+  },
+  "viewer": {
+    "panto": "Pantographe",
+    "lights": "Phares",
+    "drive": "Rouler",
+    "stop": "Stop",
+    "horn": "Klaxon",
+    "loading": "Le train arrive…",
+    "noWebgl": "La 3D n’est pas disponible sur cet appareil.",
+    "hint": "Tourne-moi avec ton doigt !"
+  },
+  "compare": {
+    "title": "Grand comment ? Rapide comment ?",
+    "speedTitle": "Vitesse",
+    "weightTitle": "Poids",
+    "lengthTitle": "Longueur",
+    "otherTrains": "Comparé aux autres trains",
+    "runner": "Enfant qui court",
+    "bike": "Vélo",
+    "car": "Voiture sur l’autoroute",
+    "cheetah": "Guépard",
+    "plane": "Avion au décollage",
+    "fasterThan": "Plus rapide qu’{{thing}} !",
+    "slowerThan": "Plus lent qu’{{thing}} – mais il grimpe les montagnes !",
+    "asFastAs": "Presque aussi rapide qu’{{thing}} !",
+    "elephants": "Aussi lourd qu’environ {{count}} éléphants",
+    "elephants_one": "Aussi lourd qu’environ un éléphant",
+    "buses": "Aussi long qu’environ {{count}} autobus scolaires",
+    "buses_one": "Environ aussi long qu’un autobus scolaire",
+    "approx": "Les valeurs des animaux et véhicules sont approximatives.",
+    "thingRunner": "un enfant qui court",
+    "thingBike": "un vélo",
+    "thingCar": "une voiture sur l’autoroute",
+    "thingCheetah": "un guépard",
+    "thingPlane": "un avion au décollage"
+  },
+  "photo": {
+    "by": "Photo : {{author}} · {{license}}",
+    "close": "Fermer"
   }
 }

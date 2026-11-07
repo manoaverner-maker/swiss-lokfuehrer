@@ -1,10 +1,10 @@
-// ✏️ Fill this in yourself. Used to create the first profiles and for the secret message.
+// ✏️ Optional personal settings.
+// The kids create their own profiles in the app on first start, so their names stay on the iPad only.
 export const personal = {
-  kids: [
-    { name: '[NAME KIND 1]', age: 6, defaultMode: 'junior' as const },
-    { name: '[NAME KIND 2]', age: 10, defaultMode: 'pro' as const },
-  ],
+  /** Optional pre-made profiles. Leave empty to let the kids create their own. */
+  kids: [] as { name: string; age: number; defaultMode: 'junior' | 'pro' }[],
   defaultLanguage: 'en' as 'en' | 'fr',
-  secretMessage: '[Nachricht von Manoa und Alina]',
+  /** Shown in the hidden surprise corner (Phase 5). */
+  secretMessage: '',
   secretPhoto: null as string | null,
 }

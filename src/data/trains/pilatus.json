@@ -1,0 +1,107 @@
+{
+  "id": "pilatus",
+  "name": "Bhe 2/2",
+  "nickname": "Pilatusbahn",
+  "operator": "PB",
+  "category": "rack_railway",
+  "gauge": "other",
+  "era": "modern",
+  "manufacturer": "Stadler / Calag",
+  "inService": {
+    "from": 2021
+  },
+  "numberBuilt": 8,
+  "specs": {
+    "maxSpeedKmh": 15,
+    "weightT": 12.8,
+    "lengthM": 12.3,
+    "seats": 46,
+    "electrification": "1650 V DC"
+  },
+  "routes": [],
+  "funFacts": [
+    {
+      "en": "It is the steepest cogwheel railway in the world: up to 48 % steep!",
+      "fr": "C’est le train à crémaillère le plus raide du monde : jusqu’à 48 % de pente !",
+      "junior": true
+    },
+    {
+      "en": "Its cogwheels lie flat and grip the rack from both sides, so they can’t jump out.",
+      "fr": "Ses roues dentées sont couchées et attrapent la crémaillère des deux côtés, pour ne jamais sauter.",
+      "junior": true
+    },
+    {
+      "en": "The railway opened in 1889 – at first with steam!",
+      "fr": "La ligne a ouvert en 1889 – d’abord avec la vapeur !",
+      "junior": false
+    },
+    {
+      "en": "On 4.6 km it climbs 1,635 metres up to Pilatus Kulm.",
+      "fr": "Sur 4,6 km, il monte de 1 635 mètres jusqu’à Pilatus Kulm.",
+      "junior": false
+    },
+    {
+      "en": "The new railcars send electricity back into the wire when they go downhill.",
+      "fr": "Les nouvelles voitures renvoient du courant dans la ligne quand elles descendent.",
+      "junior": false
+    }
+  ],
+  "description": {
+    "en": {
+      "junior": "A little red train that climbs a very steep mountain.",
+      "pro": "The Pilatus Railway climbs from Alpnachstad to Pilatus Kulm. Since 2023 it runs with new Bhe 2/2 railcars, usually coupled in pairs."
+    },
+    "fr": {
+      "junior": "Un petit train rouge qui grimpe une montagne très raide.",
+      "pro": "Le chemin de fer du Pilate monte d’Alpnachstad à Pilatus Kulm. Depuis 2023, il circule avec les nouvelles automotrices Bhe 2/2, souvent par deux."
+    }
+  },
+  "images": [
+    {
+      "file": "images/trains/pilatus-1.webp",
+      "thumb": "images/trains/pilatus-1-sm.webp",
+      "author": "Au des Kolbo",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:PB_Bhe_2v2.jpg"
+    },
+    {
+      "file": "images/trains/pilatus-2.webp",
+      "thumb": "images/trains/pilatus-2-sm.webp",
+      "author": "SchmalspurDVZO",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:En_route_to_Pilatus_Pilatusbahn_08.jpg",
+      "caption": {
+        "en": "Older railcar (until 2022) on the steep track",
+        "fr": "Ancienne voiture (jusqu’en 2022) sur la voie raide"
+      }
+    },
+    {
+      "file": "images/trains/pilatus-3.webp",
+      "thumb": "images/trains/pilatus-3-sm.webp",
+      "author": "Roland Zumbühl",
+      "license": "GFDL",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zahnradbahn_Alpnach-Pilatus.jpg",
+      "caption": {
+        "en": "Older railcar (until 2022) and the special Locher rack",
+        "fr": "Ancienne voiture (jusqu’en 2022) et la crémaillère spéciale Locher"
+      }
+    }
+  ],
+  "model": {
+    "type": "procedural",
+    "preset": "pilatus",
+    "colors": {
+      "body": "#C8102E",
+      "roof": "#2D3036",
+      "stripe": "#2D3036",
+      "window": "#2D3036"
+    }
+  },
+  "sound": "bell",
+  "rarity": "rare",
+  "verified": true,
+  "sources": [
+    "https://de.wikipedia.org/wiki/Pilatusbahn",
+    "https://de.wikipedia.org/wiki/PB_Bhe_2/2"
+  ]
+}

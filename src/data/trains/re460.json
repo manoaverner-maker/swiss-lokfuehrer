@@ -7,10 +7,12 @@
   "gauge": "standard",
   "era": "modern",
   "manufacturer": "SLM / ABB",
-  "inService": { "from": 1992 },
+  "inService": {
+    "from": 1991
+  },
   "numberBuilt": 119,
   "specs": {
-    "maxSpeedKmh": 230,
+    "maxSpeedKmh": 200,
     "powerKw": 6100,
     "weightT": 84,
     "lengthM": 18.5,
@@ -18,9 +20,26 @@
   },
   "routes": [],
   "funFacts": [
-    { "en": "Many Re 460 locos wear big adverts, so each one can look different!", "fr": "Beaucoup de Re 460 portent de grandes publicités : chacune peut avoir un look différent !", "junior": true },
-    { "en": "Its round, smooth nose was shaped in a wind tunnel.", "fr": "Son nez rond et lisse a été dessiné en soufflerie.", "junior": true },
-    { "en": "It pulls the double-deck IC2000 trains across Switzerland every day.", "fr": "Elle tire chaque jour les trains à deux étages IC2000 à travers la Suisse.", "junior": false }
+    {
+      "en": "Many Re 460 locos wear big adverts, so each one can look different!",
+      "fr": "Beaucoup de Re 460 portent de grandes publicités : chacune peut avoir un look différent !",
+      "junior": true
+    },
+    {
+      "en": "It pulls the double-deck IC2000 coaches – a whole house of passengers!",
+      "fr": "Elle tire les voitures à deux étages IC2000 – une maison entière de voyageurs !",
+      "junior": true
+    },
+    {
+      "en": "In tests it can go 230 km/h, but in daily service it is allowed 200 km/h.",
+      "fr": "En essai, elle peut rouler à 230 km/h, mais en service elle est limitée à 200 km/h.",
+      "junior": false
+    },
+    {
+      "en": "119 of them were built between 1991 and 1996.",
+      "fr": "119 exemplaires ont été construits entre 1991 et 1996.",
+      "junior": false
+    }
   ],
   "description": {
     "en": {
@@ -33,14 +52,41 @@
     }
   },
   "images": [
-    { "file": "placeholder", "author": "—", "license": "—", "sourceUrl": "", "placeholder": true },
-    { "file": "placeholder", "author": "—", "license": "—", "sourceUrl": "", "placeholder": true },
-    { "file": "placeholder", "author": "—", "license": "—", "sourceUrl": "", "placeholder": true }
+    {
+      "file": "images/trains/re460-1.webp",
+      "thumb": "images/trains/re460-1-sm.webp",
+      "author": "Alex Noble",
+      "license": "CC0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:20240703_SBB_460090.jpg"
+    },
+    {
+      "file": "images/trains/re460-2.webp",
+      "thumb": "images/trains/re460-2-sm.webp",
+      "author": "NAC",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:FFS_Re_460_056-5_Pasquerio_290809_IR2188_Locarno-Basel_SBB.jpg"
+    },
+    {
+      "file": "images/trains/re460-3.webp",
+      "thumb": "images/trains/re460-3-sm.webp",
+      "author": "Hansueli Krapf",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2012-08-12_10-52-13_Switzerland_Canton_de_Vaud_Epesses.JPG"
+    }
   ],
-  "model": { "type": "procedural", "preset": "re460", "colors": { "body": "#E30613", "roof": "#3A3D42", "stripe": "#FFFFFF" } },
+  "model": {
+    "type": "procedural",
+    "preset": "re460",
+    "colors": {
+      "body": "#E30613",
+      "roof": "#3A3D42",
+      "stripe": "#FFFFFF"
+    }
+  },
   "sound": "horn-two-tone",
   "rarity": "common",
-  "verified": false,
-  "unverifiedFields": ["inService.from", "numberBuilt", "specs.weightT", "specs.lengthM"],
-  "sources": ["https://de.wikipedia.org/wiki/SBB_Re_460"]
+  "verified": true,
+  "sources": [
+    "https://de.wikipedia.org/wiki/SBB_Re_460"
+  ]
 }

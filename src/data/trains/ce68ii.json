@@ -1,0 +1,96 @@
+{
+  "id": "ce68ii",
+  "name": "Ce 6/8 II",
+  "nickname": "Krokodil",
+  "operator": "SBB",
+  "category": "historic",
+  "gauge": "standard",
+  "era": "historic",
+  "manufacturer": "SLM / MFO",
+  "inService": {
+    "from": 1919,
+    "to": 1986
+  },
+  "numberBuilt": 33,
+  "specs": {
+    "maxSpeedKmh": 65,
+    "powerKw": 1000,
+    "weightT": 128,
+    "lengthM": 19.4,
+    "electrification": "15 kV 16.7 Hz AC"
+  },
+  "routes": [],
+  "funFacts": [
+    {
+      "en": "Its long, flat noses look like a crocodile – that’s where the name comes from!",
+      "fr": "Ses longs nez plats ressemblent à un crocodile – d’où son nom !",
+      "junior": true
+    },
+    {
+      "en": "Its wheels are pushed by big rods, a bit like a steam engine.",
+      "fr": "Ses roues sont poussées par de grosses bielles, un peu comme une loco à vapeur.",
+      "junior": true
+    },
+    {
+      "en": "You can visit one at the Swiss Museum of Transport in Lucerne.",
+      "fr": "On peut en voir une au Musée suisse des transports à Lucerne.",
+      "junior": false
+    },
+    {
+      "en": "It pulled heavy freight trains over the Gotthard for decades.",
+      "fr": "Elle a tiré de lourds trains de marchandises sur le Gothard pendant des dizaines d’années.",
+      "junior": false
+    }
+  ],
+  "description": {
+    "en": {
+      "junior": "The famous brown “crocodile” locomotive.",
+      "pro": "The Ce 6/8 II “Krokodil” was built from 1919 for heavy freight on the Gotthard. Its jointed body and rod drive made it world-famous."
+    },
+    "fr": {
+      "junior": "La célèbre locomotive brune « crocodile ».",
+      "pro": "La Ce 6/8 II « Crocodile » a été construite dès 1919 pour les lourds trains de marchandises du Gothard. Sa caisse articulée et ses bielles l’ont rendue célèbre dans le monde entier."
+    }
+  },
+  "images": [
+    {
+      "file": "images/trains/ce68ii-1.webp",
+      "thumb": "images/trains/ce68ii-1-sm.webp",
+      "author": "Martin E. Walder",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SBB_Ce_6-8_II_Krokodil.JPG"
+    },
+    {
+      "file": "images/trains/ce68ii-2.webp",
+      "thumb": "images/trains/ce68ii-2-sm.webp",
+      "author": "Kabelleger",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SBB_Ce_6-8_II_14253_Wassen_-_Gurtnellen.jpg"
+    },
+    {
+      "file": "images/trains/ce68ii-3.webp",
+      "thumb": "images/trains/ce68ii-3-sm.webp",
+      "author": "Martin E. Walder",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SBB_Ce_6-8_II_B.JPG"
+    }
+  ],
+  "model": {
+    "type": "procedural",
+    "preset": "ce68ii",
+    "colors": {
+      "body": "#8B4A26",
+      "roof": "#3A3330",
+      "stripe": "#2D2A28"
+    }
+  },
+  "sound": "horn-old",
+  "rarity": "gold",
+  "verified": false,
+  "unverifiedFields": [
+    "specs.powerKw"
+  ],
+  "sources": [
+    "https://de.wikipedia.org/wiki/SBB_Ce_6/8_II"
+  ]
+}

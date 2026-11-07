@@ -1,0 +1,96 @@
+{
+  "id": "re420",
+  "name": "Re 420",
+  "nickname": "Re 4/4 II",
+  "operator": "SBB",
+  "category": "locomotive",
+  "gauge": "standard",
+  "era": "classic",
+  "manufacturer": "SLM / BBC / MFO / SAAS",
+  "inService": {
+    "from": 1964
+  },
+  "numberBuilt": 277,
+  "specs": {
+    "maxSpeedKmh": 140,
+    "powerKw": 4360,
+    "weightT": 80,
+    "lengthM": 15.4,
+    "electrification": "15 kV 16.7 Hz AC"
+  },
+  "routes": [],
+  "funFacts": [
+    {
+      "en": "It is the biggest family of Swiss locomotives ever built!",
+      "fr": "C’est la plus grande famille de locomotives suisses jamais construite !",
+      "junior": true
+    },
+    {
+      "en": "Some of them have been working for more than 50 years.",
+      "fr": "Certaines travaillent depuis plus de 50 ans.",
+      "junior": true
+    },
+    {
+      "en": "For very heavy freight trains it teams up with a Re 6/6 – railway fans call the pair “Re 10/10”.",
+      "fr": "Pour les trains de marchandises très lourds, elle s’attelle avec une Re 6/6 – les fans appellent ce duo « Re 10/10 ».",
+      "junior": false
+    },
+    {
+      "en": "“Re 4/4” means: a fast loco with 4 axles, and all 4 are powered.",
+      "fr": "« Re 4/4 » veut dire : une loco rapide à 4 essieux, tous les 4 motorisés.",
+      "junior": false
+    }
+  ],
+  "description": {
+    "en": {
+      "junior": "A strong red locomotive that can pull almost anything.",
+      "pro": "The Re 4/4 II (today Re 420) is the most numerous Swiss locomotive class. It hauls passenger and freight trains all over the country."
+    },
+    "fr": {
+      "junior": "Une locomotive rouge et forte qui peut tirer presque tout.",
+      "pro": "La Re 4/4 II (aujourd’hui Re 420) est la série de locomotives suisses la plus nombreuse. Elle tire des trains de voyageurs et de marchandises dans tout le pays."
+    }
+  },
+  "images": [
+    {
+      "file": "images/trains/re420-1.webp",
+      "thumb": "images/trains/re420-1-sm.webp",
+      "author": "JoachimKohler-HB",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:05.06.2016_-_SBB_Re_420_Nr._11122_in_Kreuzlingen_(2016).jpg"
+    },
+    {
+      "file": "images/trains/re420-2.webp",
+      "thumb": "images/trains/re420-2-sm.webp",
+      "author": "NAC",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:16_FFS_Re_420_327-9_Allmendingen_b_B_200617.jpg"
+    },
+    {
+      "file": "images/trains/re420-3.webp",
+      "thumb": "images/trains/re420-3-sm.webp",
+      "author": "NAC",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:19_FFS_Re_4-4_11320_RB_Limmattal_120415.jpg"
+    }
+  ],
+  "model": {
+    "type": "procedural",
+    "preset": "re420",
+    "colors": {
+      "body": "#D7261E",
+      "roof": "#55585E",
+      "stripe": "#D7261E"
+    }
+  },
+  "sound": "horn-two-tone",
+  "rarity": "common",
+  "verified": false,
+  "unverifiedFields": [
+    "numberBuilt",
+    "specs.lengthM"
+  ],
+  "sources": [
+    "https://de.wikipedia.org/wiki/SBB_Re_4/4_II"
+  ]
+}

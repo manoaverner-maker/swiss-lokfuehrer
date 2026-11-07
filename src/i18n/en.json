@@ -15,7 +15,8 @@
     "comingSoon": "This track is still being built!",
     "comingSoonSub": "The workers are busy. Come back soon!",
     "language": "Language",
-    "offline": "Offline – no problem!"
+    "offline": "Offline – no problem!",
+    "colon": ": "
   },
   "station": {
     "greeting": "Grüezi {{name}}! Ready for your shift?",
@@ -67,7 +68,8 @@
     "about": "About",
     "aboutText": "Made with love for two young train fans. No ads, no tracking, no logins. All data stays on this device.",
     "dataNote": "Train data marked “to be checked” is still being verified.",
-    "voiceMissing": "No voice installed for this language on this device."
+    "voiceMissing": "No voice installed for this language on this device.",
+    "creditsIntro": "Photos from Wikimedia Commons, under free licences. Thank you to all photographers!"
   },
   "lexicon": {
     "horn": "Toot toot!",
@@ -83,14 +85,15 @@
       "category": "Type",
       "gauge": "Gauge",
       "manufacturer": "Builder",
-      "inService": "In service since",
+      "inService": "Since",
       "numberBuilt": "Number built",
       "maxSpeed": "Top speed",
       "power": "Power",
       "weight": "Weight",
       "length": "Length",
       "seats": "Seats",
-      "electrification": "Power supply"
+      "electrification": "Power supply",
+      "until": "Until"
     },
     "category": {
       "locomotive": "Locomotive",
@@ -110,5 +113,53 @@
       "classic": "Classic",
       "modern": "Modern"
     }
+  },
+  "filters": {
+    "operator": "Company",
+    "category": "Type",
+    "gauge": "Gauge",
+    "era": "Era",
+    "reset": "Show all",
+    "none": "No train matches. Try another filter!",
+    "count": "{{count}} trains"
+  },
+  "viewer": {
+    "panto": "Pantograph",
+    "lights": "Lights",
+    "drive": "Drive",
+    "stop": "Stop",
+    "horn": "Horn",
+    "loading": "The train is coming…",
+    "noWebgl": "3D is not available on this device.",
+    "hint": "Turn me with your finger!"
+  },
+  "compare": {
+    "title": "How big? How fast?",
+    "speedTitle": "Speed",
+    "weightTitle": "Weight",
+    "lengthTitle": "Length",
+    "otherTrains": "Compared with the other trains",
+    "runner": "Running child",
+    "bike": "Bicycle",
+    "car": "Car on the highway",
+    "cheetah": "Cheetah",
+    "plane": "Plane taking off",
+    "fasterThan": "Faster than a {{thing}}!",
+    "slowerThan": "Slower than a {{thing}} – but it climbs mountains!",
+    "asFastAs": "About as fast as a {{thing}}!",
+    "elephants": "As heavy as about {{count}} elephants",
+    "elephants_one": "As heavy as about one elephant",
+    "buses": "As long as about {{count}} school buses",
+    "buses_one": "About as long as one school bus",
+    "approx": "Animal and vehicle values are approximate.",
+    "thingRunner": "running child",
+    "thingBike": "bicycle",
+    "thingCar": "car on the highway",
+    "thingCheetah": "cheetah",
+    "thingPlane": "plane taking off"
+  },
+  "photo": {
+    "by": "Photo: {{author}} · {{license}}",
+    "close": "Close"
   }
 }

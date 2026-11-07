@@ -7,20 +7,40 @@
   "gauge": "standard",
   "era": "modern",
   "manufacturer": "Stadler Rail",
-  "inService": { "from": 2019 },
-  "numberBuilt": 36,
+  "inService": {
+    "from": 2017
+  },
+  "numberBuilt": 41,
   "specs": {
     "maxSpeedKmh": 250,
-    "powerKw": 6000,
+    "powerKw": 4720,
+    "weightT": 380,
     "lengthM": 202,
-    "seats": 405,
-    "electrification": "15 kV 16.7 Hz AC / 3 kV DC / 25 kV 50 Hz AC"
+    "seats": 422,
+    "electrification": "15 kV 16.7 Hz AC / 25 kV 50 Hz AC / 3 kV DC"
   },
   "routes": [],
   "funFacts": [
-    { "en": "“Giruno” means “buzzard” in Romansh, one of the four Swiss languages.", "fr": "« Giruno » veut dire « buse » en romanche, une des quatre langues suisses.", "junior": true },
-    { "en": "It rushes through the Gotthard Base Tunnel, the longest railway tunnel in the world.", "fr": "Il fonce dans le tunnel de base du Gothard, le plus long tunnel ferroviaire du monde.", "junior": true },
-    { "en": "It can run on Swiss, Italian and German power systems, so it travels all the way to Milan.", "fr": "Il roule avec les courants suisse, italien et allemand : il peut aller jusqu’à Milan.", "junior": false }
+    {
+      "en": "“Giruno” means “buzzard” in Romansh, one of the four Swiss languages.",
+      "fr": "« Giruno » veut dire « buse » en romanche, une des quatre langues suisses.",
+      "junior": true
+    },
+    {
+      "en": "It rushes through the Gotthard Base Tunnel, the longest railway tunnel in the world.",
+      "fr": "Il fonce dans le tunnel de base du Gothard, le plus long tunnel ferroviaire du monde.",
+      "junior": true
+    },
+    {
+      "en": "It works with Swiss and Italian power systems, so it can travel all the way to Milan.",
+      "fr": "Il fonctionne avec les courants suisse et italien : il peut aller jusqu’à Milan.",
+      "junior": false
+    },
+    {
+      "en": "It is 202 metres long – about as long as two football fields.",
+      "fr": "Il mesure 202 mètres – presque deux terrains de football.",
+      "junior": false
+    }
   ],
   "description": {
     "en": {
@@ -33,14 +53,45 @@
     }
   },
   "images": [
-    { "file": "placeholder", "author": "—", "license": "—", "sourceUrl": "", "placeholder": true },
-    { "file": "placeholder", "author": "—", "license": "—", "sourceUrl": "", "placeholder": true },
-    { "file": "placeholder", "author": "—", "license": "—", "sourceUrl": "", "placeholder": true }
+    {
+      "file": "images/trains/rabe501-1.webp",
+      "thumb": "images/trains/rabe501-1-sm.webp",
+      "author": "Travelarz",
+      "license": "CC BY-SA 3.0 pl",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:InnoTrans_2016_(215)_Travelarz.JPG"
+    },
+    {
+      "file": "images/trains/rabe501-2.webp",
+      "thumb": "images/trains/rabe501-2-sm.webp",
+      "author": "Nelso Silva from Porto, Portugal",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SBB_RABe_501_002_(51747913155).jpg"
+    },
+    {
+      "file": "images/trains/rabe501-3.webp",
+      "thumb": "images/trains/rabe501-3-sm.webp",
+      "author": "Andrzej Otrębski",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Milano_Centrale_RABe_501.jpg"
+    }
   ],
-  "model": { "type": "procedural", "preset": "giruno", "colors": { "body": "#F4F4F2", "roof": "#B8BDC4", "stripe": "#E30613", "window": "#2D3036" } },
+  "model": {
+    "type": "procedural",
+    "preset": "giruno",
+    "colors": {
+      "body": "#F4F4F2",
+      "roof": "#B8BDC4",
+      "stripe": "#E30613",
+      "window": "#2D3036"
+    }
+  },
   "sound": "horn-two-tone",
   "rarity": "rare",
   "verified": false,
-  "unverifiedFields": ["numberBuilt", "specs.seats", "specs.powerKw", "inService.from"],
-  "sources": ["https://de.wikipedia.org/wiki/SBB_RABe_501"]
+  "unverifiedFields": [
+    "numberBuilt"
+  ],
+  "sources": [
+    "https://de.wikipedia.org/wiki/SBB_RABe_501"
+  ]
 }

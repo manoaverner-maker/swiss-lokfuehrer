@@ -1,0 +1,97 @@
+{
+  "id": "rabe515",
+  "name": "RABe 515",
+  "nickname": "MUTZ",
+  "operator": "BLS",
+  "category": "multiple_unit",
+  "gauge": "standard",
+  "era": "modern",
+  "manufacturer": "Stadler Rail",
+  "inService": {
+    "from": 2012
+  },
+  "numberBuilt": 39,
+  "specs": {
+    "maxSpeedKmh": 160,
+    "lengthM": 102.24,
+    "seats": 335,
+    "electrification": "15 kV 16.7 Hz AC"
+  },
+  "routes": [],
+  "funFacts": [
+    {
+      "en": "“Mutz” is the Bernese word for bear – the symbol of Bern!",
+      "fr": "« Mutz » veut dire ours en bernois – le symbole de Berne !",
+      "junior": true
+    },
+    {
+      "en": "One of them is called “Ours”, the French word for bear, because it drives to Fribourg.",
+      "fr": "L’un d’eux s’appelle « Ours », parce qu’il roule vers Fribourg, où l’on parle français.",
+      "junior": true
+    },
+    {
+      "en": "MUTZ also stands for “Moderner Universeller Triebzug” – modern universal train.",
+      "fr": "MUTZ veut aussi dire « Moderner Universeller Triebzug » – train automoteur moderne et universel.",
+      "junior": false
+    },
+    {
+      "en": "A 4-car MUTZ has 335 seats on two floors.",
+      "fr": "Un MUTZ de 4 voitures a 335 places sur deux étages.",
+      "junior": false
+    }
+  ],
+  "description": {
+    "en": {
+      "junior": "A green and white double-decker train from Bern.",
+      "pro": "The MUTZ is a double-deck Stadler KISS train of the BLS. It runs on the S-Bahn Bern and on some InterRegio lines."
+    },
+    "fr": {
+      "junior": "Un train vert et blanc à deux étages, de Berne.",
+      "pro": "Le MUTZ est un train à deux étages Stadler KISS du BLS. Il circule sur le RER Berne et sur quelques lignes InterRegio."
+    }
+  },
+  "images": [
+    {
+      "file": "images/trains/rabe515-1.webp",
+      "thumb": "images/trains/rabe515-1-sm.webp",
+      "author": "JoachimKohler-HB",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:BLS_RABe_515_016_-_Mutz_16_(Fribourg%2C_2014).jpg"
+    },
+    {
+      "file": "images/trains/rabe515-2.webp",
+      "thumb": "images/trains/rabe515-2-sm.webp",
+      "author": "Kabelleger / David Gubler",
+      "license": "GFDL",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:BLS_RABe_515_B%C3%BCrglen.jpg"
+    },
+    {
+      "file": "images/trains/rabe515-3.webp",
+      "thumb": "images/trains/rabe515-3-sm.webp",
+      "author": "Heitersberg",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wappen_der_Stadt_Bern_auf_RABe_515_001_(Stadler_KISS_der_BLS).jpg"
+    }
+  ],
+  "model": {
+    "type": "procedural",
+    "preset": "mutz",
+    "colors": {
+      "body": "#E9ECEA",
+      "roof": "#9AA5AF",
+      "stripe": "#7AB648",
+      "window": "#2D3036",
+      "nose": "#5E6F7B"
+    }
+  },
+  "sound": "horn-two-tone",
+  "rarity": "common",
+  "verified": false,
+  "unverifiedFields": [
+    "specs.lengthM",
+    "specs.seats"
+  ],
+  "sources": [
+    "https://de.wikipedia.org/wiki/Stadler_KISS"
+  ]
+}

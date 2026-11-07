@@ -1,0 +1,95 @@
+{
+  "id": "abe812",
+  "name": "ABe 8/12",
+  "nickname": "Allegra",
+  "operator": "RhB",
+  "category": "multiple_unit",
+  "gauge": "meter",
+  "era": "modern",
+  "manufacturer": "Stadler Rail",
+  "inService": {
+    "from": 2009
+  },
+  "numberBuilt": 15,
+  "specs": {
+    "maxSpeedKmh": 100,
+    "powerKw": 2320,
+    "weightT": 122,
+    "lengthM": 49.5,
+    "seats": 100,
+    "electrification": "11 kV 16.7 Hz AC / 1 kV DC"
+  },
+  "routes": [],
+  "funFacts": [
+    {
+      "en": "“Allegra” is how people say hello in Romansh!",
+      "fr": "« Allegra », c’est « bonjour » en romanche !",
+      "junior": true
+    },
+    {
+      "en": "It climbs the Bernina Pass without cogwheels – just with strong, grippy wheels.",
+      "fr": "Il grimpe le col de la Bernina sans crémaillère – seulement avec des roues qui adhèrent fort.",
+      "junior": true
+    },
+    {
+      "en": "It can use two kinds of electricity: 11,000 volts AC and 1,000 volts DC on the Bernina line.",
+      "fr": "Il utilise deux sortes de courant : 11 000 volts alternatif et 1 000 volts continu sur la ligne de la Bernina.",
+      "junior": false
+    },
+    {
+      "en": "On the Bernina line it goes up slopes of 7 % – very steep for a normal train.",
+      "fr": "Sur la ligne de la Bernina, il monte des pentes de 7 % – très raide pour un train normal.",
+      "junior": false
+    }
+  ],
+  "description": {
+    "en": {
+      "junior": "A red mountain train that goes over the Bernina Pass.",
+      "pro": "The Allegra is a three-car multiple unit of the Rhaetian Railway. It runs on the main network and over the Bernina line to Tirano in Italy."
+    },
+    "fr": {
+      "junior": "Un train rouge de montagne qui passe le col de la Bernina.",
+      "pro": "L’Allegra est une automotrice de trois caisses des Chemins de fer rhétiques. Elle circule sur le réseau principal et sur la ligne de la Bernina jusqu’à Tirano, en Italie."
+    }
+  },
+  "images": [
+    {
+      "file": "images/trains/abe812-1.webp",
+      "thumb": "images/trains/abe812-1-sm.webp",
+      "author": "Geobia",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:5783TiranoFerroviaRetica.jpg"
+    },
+    {
+      "file": "images/trains/abe812-2.webp",
+      "thumb": "images/trains/abe812-2-sm.webp",
+      "author": "Hansueli Krapf",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2011-08-02_12-54-41_Switzerland_Alp_Gr%C3%BCm.jpg"
+    },
+    {
+      "file": "images/trains/abe812-3.webp",
+      "thumb": "images/trains/abe812-3-sm.webp",
+      "author": "Hansueli Krapf",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2013-08-05_11-33-20_Switzerland_Kanton_Graub%C3%BCnden_Ospizio_Bernina_Bernina_Hospiz.JPG"
+    }
+  ],
+  "model": {
+    "type": "procedural",
+    "preset": "allegra",
+    "colors": {
+      "body": "#C8102E",
+      "roof": "#9AA0A6",
+      "stripe": "#FFFFFF",
+      "window": "#2D3036"
+    }
+  },
+  "sound": "horn-high",
+  "rarity": "rare",
+  "verified": true,
+  "sources": [
+    "https://de.wikipedia.org/wiki/RhB_ABe_8/12",
+    "https://de.wikipedia.org/wiki/Berninabahn"
+  ]
+}

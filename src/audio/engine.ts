@@ -90,22 +90,70 @@ function noise(start: number, dur: number, gain: number, freq: number) {
   src.start(c.currentTime + start)
 }
 
-/** Two-tone horn, in the style of a Swiss electric locomotive. */
-function horn() {
+/** Horn built from detuned saw waves through a low-pass filter. */
+function hornNotes(notes: [number, number, number][], cutoff = 2200, gain = 0.07) {
   const c = getCtx()
   if (!c || !sfxBus) return
   const lp = c.createBiquadFilter()
   lp.type = 'lowpass'
-  lp.frequency.value = 2200
+  lp.frequency.value = cutoff
   lp.connect(sfxBus)
-  const notes: [number, number, number][] = [
-    [466, 0, 0.42], // high
-    [370, 0.45, 0.6], // low
-  ]
   for (const [f, start, dur] of notes) {
-    for (const detune of [0, 3, -4]) tone({ type: 'sawtooth', freq: f + detune, start, dur, gain: 0.07, attack: 0.04 }, lp)
-    tone({ type: 'square', freq: f * 1.5, start, dur, gain: 0.02, attack: 0.04 }, lp)
+    for (const detune of [0, 3, -4]) tone({ type: 'sawtooth', freq: f + detune, start, dur, gain, attack: 0.04 }, lp)
+    tone({ type: 'square', freq: f * 1.5, start, dur, gain: gain * 0.3, attack: 0.04 }, lp)
   }
+}
+
+/** Two-tone horn, in the style of a Swiss electric locomotive (high – low). */
+const horn = () =>
+  hornNotes([
+    [466, 0, 0.42],
+    [370, 0.45, 0.6],
+  ])
+
+/** Brighter two-tone horn for the mountain railways. */
+const hornHigh = () =>
+  hornNotes(
+    [
+      [587, 0, 0.3],
+      [494, 0.33, 0.45],
+    ],
+    2800,
+  )
+
+/** Old locomotive: one deep, long tone. */
+const hornOld = () => hornNotes([[294, 0, 1.0]], 1500, 0.08)
+
+/** Little bell of a mountain railcar. */
+const bell = () => {
+  for (let i = 0; i < 3; i++) {
+    tone({ freq: 1320, start: i * 0.32, dur: 0.6, gain: 0.18 })
+    tone({ freq: 3170, start: i * 0.32, dur: 0.3, gain: 0.05 })
+  }
+}
+
+/** Electric motor spinning up, with rail joints "tak-tak". */
+function motorStart() {
+  const c = getCtx()
+  if (!c || !sfxBus) return
+  const t0 = c.currentTime
+  const osc = c.createOscillator()
+  const g = c.createGain()
+  osc.type = 'sawtooth'
+  osc.frequency.setValueAtTime(70, t0)
+  osc.frequency.exponentialRampToValueAtTime(420, t0 + 2.6)
+  const lp = c.createBiquadFilter()
+  lp.type = 'lowpass'
+  lp.frequency.value = 900
+  g.gain.setValueAtTime(0.0001, t0)
+  g.gain.exponentialRampToValueAtTime(0.09, t0 + 0.4)
+  g.gain.exponentialRampToValueAtTime(0.0001, t0 + 3)
+  osc.connect(lp)
+  lp.connect(g)
+  g.connect(sfxBus)
+  osc.start(t0)
+  osc.stop(t0 + 3.1)
+  ;[0.9, 1.05, 1.7, 1.83, 2.4, 2.5].forEach((s) => noise(s, 0.05, 0.5, 900))
 }
 
 export const sfx = {
@@ -117,6 +165,10 @@ export const sfx = {
     tone({ type: 'triangle', freq: 250, start: 0.15, dur: 0.25, gain: 0.2 })
   },
   horn,
+  hornHigh,
+  hornOld,
+  bell,
+  motorStart,
   /** Station chime, three notes (own melody). */
   gong: () => {
     const notes = [659, 523, 784]
@@ -198,4 +250,18 @@ function startMusic() {
 function stopMusic() {
   if (musicTimer !== null) window.clearInterval(musicTimer)
   musicTimer = null
+}
+
+/** Plays the typical sound of a train (value of `sound` in the train data). */
+export function playTrainSound(sound: string | undefined) {
+  switch (sound) {
+    case 'horn-high':
+      return hornHigh()
+    case 'horn-old':
+      return hornOld()
+    case 'bell':
+      return bell()
+    default:
+      return horn()
+  }
 }

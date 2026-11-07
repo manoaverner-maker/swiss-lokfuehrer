@@ -9,6 +9,7 @@ import { useProfiles, capColors, type Profile } from '../../store/profiles'
 import { useSettings } from '../../store/settings'
 import { pickVoice, speechAvailable } from '../../audio/speech'
 import { sfx } from '../../audio/engine'
+import { trains } from '../../data/trains'
 import type { Language } from '../../i18n'
 
 let unlockedThisSession = false
@@ -189,7 +190,21 @@ export function ParentsPage() {
         </Section>
 
         <Section title={`🖼️ ${t('parents.credits')}`}>
-          <p>{t('parents.creditsSoon')}</p>
+          <p className="mb-3 text-sm opacity-70">{t('parents.creditsIntro')}</p>
+          <ul className="flex flex-col gap-2 text-sm">
+            {trains.flatMap((tr) =>
+              tr.images
+                .filter((im) => !im.placeholder)
+                .map((im, i) => (
+                  <li key={`${tr.id}${i}`} className="rounded-xl bg-black/5 p-2">
+                    <b>{tr.nickname ?? tr.name} #{i + 1}</b> – {im.author} · {im.license} ·{' '}
+                    <a href={im.sourceUrl} target="_blank" rel="noreferrer" className="underline">
+                      Wikimedia Commons
+                    </a>
+                  </li>
+                )),
+            )}
+          </ul>
         </Section>
 
         <Section title={`ℹ️ ${t('parents.about')}`}>

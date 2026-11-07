@@ -11,6 +11,8 @@ const localized = z.object({ junior: text, pro: text })
 
 const imageSchema = z.object({
   file: text, // path below public/, or "placeholder"
+  thumb: z.string().optional(), // small version for cards
+  caption: z.object({ en: text, fr: text }).optional(),
   author: text,
   license: text,
   sourceUrl: z.string(),

@@ -1,0 +1,98 @@
+{
+  "id": "rabe502",
+  "name": "RABe 502",
+  "nickname": "FV-Dosto",
+  "operator": "SBB",
+  "category": "multiple_unit",
+  "gauge": "standard",
+  "era": "modern",
+  "manufacturer": "Bombardier",
+  "inService": {
+    "from": 2012
+  },
+  "numberBuilt": 62,
+  "specs": {
+    "maxSpeedKmh": 200,
+    "powerKw": 7500,
+    "lengthM": 200.6,
+    "seats": 682,
+    "electrification": "15 kV 16.7 Hz AC"
+  },
+  "routes": [],
+  "funFacts": [
+    {
+      "en": "It has two floors – you can sit upstairs and look far over the land!",
+      "fr": "Il a deux étages – on peut s’asseoir en haut et voir loin !",
+      "junior": true
+    },
+    {
+      "en": "Many of these trains carry the coat of arms of a Swiss town.",
+      "fr": "Beaucoup de ces trains portent les armoiries d’une ville suisse.",
+      "junior": true
+    },
+    {
+      "en": "An 8-car train has up to 682 seats.",
+      "fr": "Un train de 8 voitures a jusqu’à 682 places assises.",
+      "junior": false
+    },
+    {
+      "en": "“Dosto” is short for “Doppelstock”, German for double-deck.",
+      "fr": "« Dosto » est l’abréviation de « Doppelstock », qui veut dire « à deux étages » en allemand.",
+      "junior": false
+    }
+  ],
+  "description": {
+    "en": {
+      "junior": "A very long double-decker train.",
+      "pro": "The FV-Dosto (Twindexx Swiss Express) is a double-deck long-distance train. Eight-car sets are about 200 m long and run on InterCity and InterRegio lines."
+    },
+    "fr": {
+      "junior": "Un très long train à deux étages.",
+      "pro": "Le FV-Dosto (Twindexx Swiss Express) est un train grandes lignes à deux étages. Les rames de huit voitures mesurent environ 200 m et circulent en InterCity et InterRegio."
+    }
+  },
+  "images": [
+    {
+      "file": "images/trains/rabe502-1.webp",
+      "thumb": "images/trains/rabe502-1-sm.webp",
+      "author": "JoachimKohler-HB",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:IC_1_SBB_RABDe_502_002-4_in_Z%C3%BCrich_HB_(2026).jpg"
+    },
+    {
+      "file": "images/trains/rabe502-2.webp",
+      "thumb": "images/trains/rabe502-2-sm.webp",
+      "author": "Nelso Silva from Porto, Portugal",
+      "license": "CC BY-SA 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SBB_RABe_502_404_(52786196986).jpg"
+    },
+    {
+      "file": "images/trains/rabe502-3.webp",
+      "thumb": "images/trains/rabe502-3-sm.webp",
+      "author": "Heitersberg",
+      "license": "CC BY-SA 4.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wappen_Chur.jpg"
+    }
+  ],
+  "model": {
+    "type": "procedural",
+    "preset": "fvdosto",
+    "colors": {
+      "body": "#F2F2F0",
+      "roof": "#B8BDC4",
+      "stripe": "#E30613",
+      "window": "#2D3036",
+      "nose": "#E30613"
+    }
+  },
+  "sound": "horn-two-tone",
+  "rarity": "common",
+  "verified": false,
+  "unverifiedFields": [
+    "specs.powerKw",
+    "numberBuilt"
+  ],
+  "sources": [
+    "https://de.wikipedia.org/wiki/SBB_RABe_502"
+  ]
+}

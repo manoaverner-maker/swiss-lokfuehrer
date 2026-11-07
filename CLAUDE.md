@@ -3,8 +3,10 @@
 Interactive PWA about Swiss trains for two kids (≈6 and ≈10) living in Canada. Gift app. The original brief is kept privately by the owner (not in this public repo); its essentials are below.
 
 ## Current status
-- **Phase 1 – Foundation: done.** Setup, PWA, routing, design system, station start screen with profile picker, Junior/Pro, EN/FR switch, synthesized sound, Zod schema, 3 sample trains (placeholders).
-- Next: **Phase 2 – Lexicon + 3D construction kit** (then show screenshots to the owner and wait for feedback).
+- **Phase 1 – Foundation: done.**
+- **Phase 2 – Lexicon + 3D kit: done, waiting for owner feedback.** 10 trains (re460, re420, ae66, ce68ii, rabe501, rabe502, ge44ii, abe812, rabe515, pilatus) with researched data (de.wikipedia), 3 Commons photos each, 3D presets, fun facts, sounds; gallery with filters; detail page with 3D viewer (panto/lights/drive/horn), photo gallery, comparisons, fact sheet.
+- Next: **Phase 3 – Living map** (after the owner's feedback on Phase 2).
+- The kids create their own profiles in the app (owner does not want their names in the repo). `personal.kids` stays empty.
 
 ## Phase plan (from the brief)
 1. Foundation ✅
@@ -22,7 +24,17 @@ Interactive PWA about Swiss trains for two kids (≈6 and ≈10) living in Canad
 - Work goes straight to `main` (solo project; push = deploy).
 
 ## Tech stack
-Vite 8 · React 19 · TypeScript strict · Tailwind 4 (`@theme` tokens in src/styles/index.css) · framer-motion · zustand (persist via `safeStorage`, never touch localStorage directly) · i18next · Zod (build-time validation only) · vite-plugin-pwa. Later: three/R3F/drei (Phase 2), maplibre-gl (Phase 3).
+Vite 8 · React 19 · TypeScript strict · Tailwind 4 (`@theme` tokens in src/styles/index.css) · framer-motion · zustand (persist via `safeStorage`, never touch localStorage directly) · i18next · Zod (build-time validation only) · vite-plugin-pwa. three + @react-three/fiber + drei (3D, lazy-loaded chunk). Later: maplibre-gl (Phase 3).
+
+## 3D kit (src/three)
+- `kit/types.ts` CarSpec/TrainPreset · `kit/profile.ts` side profile per nose kind (flat/round/slope/wedge), clip + windscreen shell · `kit/Car.tsx` one car body (extruded profile, cap, windows, doors, stripes, grilles, lamps, pantos, bogies) · `kit/Train3D.tsx` layout, scrolling track, specials (`krokodil`, `rack`) · `presets/index.ts` one preset per train (`model.preset` in the JSON).
+- Animation state lives in refs (`kit/anim.ts`); the React-hooks lint rules forbid mutating memoised objects, so mutate `useRef` values only.
+- Environment lighting uses local Lightformers (no HDR download → offline OK).
+
+## Data research notes
+- Wikimedia APIs are rate-limited from the sandbox (429); plain pages work: `https://de.wikipedia.org/wiki/<Title>?action=raw`, Commons category/file HTML pages. Send a User-Agent.
+- Photos: pick in `scripts/image-picks.json`, run `npx tsx scripts/fetch-images.ts [ids]` (writes WebP 1200px + 480px thumb and the credits into the JSON).
+- `inService.from` = first year built (UI label "Since"). Speeds = permitted service speed. Power = continuous rating where available.
 
 ## Rules
 - Never invent train data. Unsure → `verified: false` + list the field in `unverifiedFields`. Always fill `sources`.

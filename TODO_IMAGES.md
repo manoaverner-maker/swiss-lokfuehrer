@@ -1,10 +1,12 @@
-# Images still missing
+# Images
 
-Real photos (3 per train, free licences from Wikimedia Commons) are added in Phase 2.
-Until then every train shows placeholders.
+All 10 trains of Phase 2 have 3 free-licence photos from Wikimedia Commons
+(author + licence + source stored in each `src/data/trains/*.json`).
 
-| Train | Missing |
-|---|---|
-| Re 460 | 3 photos |
-| RABe 501 Giruno | 3 photos |
-| Ge 4/4 II | 3 photos |
+To change a photo: edit `scripts/image-picks.json` and run `npx tsx scripts/fetch-images.ts <trainId>`
+(`REFRESH=1` re-downloads files that already exist).
+
+Notes:
+- Pilatusbahn: photos 2 and 3 show the older railcars (until 2022); captions say so.
+
+Still missing: none.

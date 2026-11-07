@@ -1,0 +1,93 @@
+{
+  "id": "ae66",
+  "name": "Ae 6/6",
+  "nickname": "Kantonslok",
+  "operator": "SBB",
+  "category": "historic",
+  "gauge": "standard",
+  "era": "historic",
+  "manufacturer": "SLM / BBC / MFO",
+  "inService": {
+    "from": 1952,
+    "to": 2013
+  },
+  "numberBuilt": 120,
+  "specs": {
+    "maxSpeedKmh": 125,
+    "powerKw": 4300,
+    "weightT": 120,
+    "lengthM": 18.4,
+    "electrification": "15 kV 16.7 Hz AC"
+  },
+  "routes": [],
+  "funFacts": [
+    {
+      "en": "The first 25 locos each carried the coat of arms of a Swiss canton.",
+      "fr": "Les 25 premières locos portaient chacune les armoiries d’un canton suisse.",
+      "junior": true
+    },
+    {
+      "en": "It has 6 axles and all of them have a motor – super strong for the mountains!",
+      "fr": "Elle a 6 essieux, tous motorisés – super forte pour la montagne !",
+      "junior": true
+    },
+    {
+      "en": "It was built for the steep Gotthard line.",
+      "fr": "Elle a été construite pour la ligne raide du Gothard.",
+      "junior": false
+    },
+    {
+      "en": "When the canton of Jura was founded in 1979, loco 11483 became its “canton loco”.",
+      "fr": "Quand le canton du Jura a été créé en 1979, la loco 11483 est devenue sa « loco cantonale ».",
+      "junior": false
+    }
+  ],
+  "description": {
+    "en": {
+      "junior": "A big green mountain locomotive with shiny stripes.",
+      "pro": "The Ae 6/6 was the strong Gotthard locomotive of the 1950s and 60s. The first 25, the “canton locos”, carry chrome stripes and cantonal coats of arms."
+    },
+    "fr": {
+      "junior": "Une grande locomotive verte de montagne avec des bandes brillantes.",
+      "pro": "L’Ae 6/6 était la puissante locomotive du Gothard des années 1950 et 60. Les 25 premières, les « locos cantonales », portent des bandes chromées et les armoiries des cantons."
+    }
+  },
+  "images": [
+    {
+      "file": "images/trains/ae66-1.webp",
+      "thumb": "images/trains/ae66-1-sm.webp",
+      "author": "Fabien Perissinotto",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SBB_Historic_Ae_6-6_11411_-_Erstfeld%2C_5th_April_2014.jpg"
+    },
+    {
+      "file": "images/trains/ae66-2.webp",
+      "thumb": "images/trains/ae66-2-sm.webp",
+      "author": "Unknown author",
+      "license": "Public domain",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SBB_Ae_6-6_11411.png"
+    },
+    {
+      "file": "images/trains/ae66-3.webp",
+      "thumb": "images/trains/ae66-3-sm.webp",
+      "author": "kitmasterbloke",
+      "license": "CC BY 2.0",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:11413_Ae_6_6_Electric_loco_1952.jpg"
+    }
+  ],
+  "model": {
+    "type": "procedural",
+    "preset": "ae66",
+    "colors": {
+      "body": "#2F5D50",
+      "roof": "#4B5150",
+      "stripe": "#C9CED6"
+    }
+  },
+  "sound": "horn-old",
+  "rarity": "gold",
+  "verified": true,
+  "sources": [
+    "https://de.wikipedia.org/wiki/SBB_Ae_6/6"
+  ]
+}
